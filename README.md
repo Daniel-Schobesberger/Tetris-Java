@@ -1,1 +1,1 @@
-# Tetris-JavaFX
+# Tetris-Java
