@@ -21,3 +21,7 @@ Vom Himmel herab fallen Blöcke in einer zufälligen Form und in einer zufällig
 Falls eine Reihe vollständig ausgefüllt wird, verschwindet diese, und der Score-Zähler am rechten Rand wird erhöht. Falls dies nicht der Fall ist, wird das Spielfeld immer größer - bis es schließlich zu Ende ist. Falls das Ende erreicht wird, startet sich das Spiel einfach nochmal neu. Abbrechen kann man das Spiel mit einem kleinen X in der rechten oberen Ecke.
 
 Für die Umsetzung planen wir ungefähr 4 Wochen ein, wobei jeder von uns ungefähr 20 Stunden daran arbeiten & darin eingebunden werden sollte.
+
+---
+
+![img](/SKETCH/SKETCH.jpg)
