@@ -1,4 +1,4 @@
-# SEW PROJEKT
+# SEW PROJEKT - TETRIS
 Florian Doppler, Mia Mandel, Daniel Schobesberger, Nico Siegl
 
 ---
