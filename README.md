@@ -16,7 +16,7 @@ Es öffnet sich ein Fenster, mit folgenden Informationen:
 * Score
 * Highscore
 
-Vom Himmel herab fallen Blöcke in einer zufälligen Form und in einer zufälligen Farbe. Diese können mithilfe der Richtungs-Tasten (◀▲▼▶) beliebig gesteuert und somit verformt und verschoben werden. Oben rechts befindet sich die Anzeige des nächsten herabfallenden Blocks, darunter der derzeitige Score und der in einer früheren Runde erzielte Highscore.
+Vom Himmel herab fallen Blöcke in einer zufälligen Form und in einer zufälligen Farbe. Diese können mithilfe der Richtungs-Tasten (◀️🔼🔽▶️) beliebig gesteuert und somit verformt und verschoben werden. Oben rechts befindet sich die Anzeige des nächsten herabfallenden Blocks, darunter der derzeitige Score und der in einer früheren Runde erzielte Highscore.
 
 Falls eine Reihe vollständig ausgefüllt wird, verschwindet diese, und der Score-Zähler am rechten Rand wird erhöht. Falls dies nicht der Fall ist, wird das Spielfeld immer größer - bis es schließlich zu Ende ist. Falls das Ende erreicht wird, startet sich das Spiel einfach nochmal neu. Abbrechen kann man das Spiel mit einem kleinen X in der rechten oberen Ecke.
 
