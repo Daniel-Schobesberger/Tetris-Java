@@ -24,4 +24,4 @@ Für die Umsetzung planen wir ungefähr 4 Wochen ein, wobei jeder von uns ungef�
 
 ---
 
-![img](SKETCH.jpg)
+![img](/SKETCH.jpg)
