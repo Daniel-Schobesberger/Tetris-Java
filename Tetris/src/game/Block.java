@@ -1,5 +1,10 @@
 package game;
 
+import java.awt.Color;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class Block{
 
     BlockType type;
@@ -54,7 +59,7 @@ public class Block{
            bounds = blockBuilder(type);
        } catch (FileNotFoundException e){
 
-           e.printStrackTrace();
+           e.printStackTrace();
        }
 
     }
@@ -71,14 +76,14 @@ public class Block{
         switch(type) {
             case I: bounds = new int[4][4][4];
             break;
-            case 0: bounds = new int[4][2][2];
+            case O: bounds = new int[4][2][2];
             break;
             default:
                 bounds = new int[4][3][3];
         }
 
         File file = new File("rsc/blocks/" + type + ".txt");
-        Scanncer sc = new Scanner(file);
+        Scanner sc = new Scanner(file);
 
         for (int variant = 0; variant < 4; variant++) {
             for (int i = 0; i < bounds[0].length; i++) {

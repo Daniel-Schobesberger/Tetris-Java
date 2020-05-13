@@ -1,4 +1,4 @@
-package infrastructure;
+package ui;
 
 import processing.core.*;
 import javax.swing.JFrame;
