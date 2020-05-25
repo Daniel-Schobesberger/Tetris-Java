@@ -1,11 +1,12 @@
 package io;
 
+import data.Collision;
 import game.Game;
 import game.GameState;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public class KeyHandler implements KeyListener{
+public class KeyHandler implements KeyListener {
 
     @Override
     public void keyTyped(KeyEvent e) {
@@ -14,56 +15,98 @@ public class KeyHandler implements KeyListener{
 
     @Override
     public void keyPressed(KeyEvent e) {
-        if (Game.gamestate == GameState.start) {
+        if (Game.gameState == Game.gameState.start) {
             if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-                Game.gamestate = GameState.ingame;
+                Game.gameState = Game.gameState.ingame;
             }
         }
-        
-        if (Game.gamestate == GameState.ingame) {
+
+        if (Game.gameState == Game.gameState.ingame) {
+            //Block rotieren
             if (e.getKeyCode() == KeyEvent.VK_SPACE) {
-                Game.currentBlock.rotate();
+                try {
+                    Game.currentBlock.rotate();
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
             }
-            
+            if (e.getKeyCode() == KeyEvent.VK_R) {
+                try {
+                    Game.currentBlock.rotate();
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            }
+
+            //Hinunterfallen lassen des Blocks
             if (e.getKeyCode() == KeyEvent.VK_DOWN) {
                 Game.speedup = true;
             }
-            
+            if (e.getKeyCode() == KeyEvent.VK_S) {
+                Game.speedup = true;
+            }
+
+            //Block nach rechts Bewegen
             if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
-                Game.currentBlock.setX(Game.currentBlock.getX() + 1);
+                try {
+                    Game.currentBlock.setX(Game.currentBlock.getX() + 1);
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+
             }
-            
+            if (e.getKeyCode() == KeyEvent.VK_D) {
+                try {
+                    Game.currentBlock.setX(Game.currentBlock.getX() + 1);
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+
+            }
+
+            //Block nach links bewegen
             if (e.getKeyCode() == KeyEvent.VK_LEFT) {
-                Game.currentBlock.setX(Game.currentBlock.getX() - 1);
+                try {
+                    Game.currentBlock.setX(Game.currentBlock.getX() - 1);
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
             }
-            
+            if (e.getKeyCode() == KeyEvent.VK_A) {
+                try {
+                    Game.currentBlock.setX(Game.currentBlock.getX() - 1);
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            }
+
+            //Schnelles Tempo stoppen
+            if (e.getKeyCode() == KeyEvent.VK_W) {
+                Game.speedup = false;
+            }
+
             if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
-                Game.gamestate = GameState.pause;
+                Game.gameState = Game.gameState.pause;
             }
-        }
-        
-        else if (Game.gamestate == GameState.pause) {
+        } else if (Game.gameState == Game.gameState.pause) {
             if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
-                Game.gamestate = GameState.ingame;
+                Game.gameState = Game.gameState.ingame;
             }
-        }
-        
-        else if (Game.gamestate == GameState.gameover) {
+        } else if (Game.gameState == Game.gameState.gameover) {
             if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-                Game.gamestate = GameState.ingame;
+                Game.gameState = Game.gameState.ingame;
                 Game.clear();
             }
-        } 
+        }
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
         if (Game.gamestate == GameState.ingame) {
-             if (e.getKeyCode() == KeyEvent.VK_DOWN) {
-                 Game.speedup = false;
-             }
-         }
+            if (e.getKeyCode() == KeyEvent.VK_DOWN) {
+                Game.speedup = false;
+            }
+        }
     }
-    
-    
+
 }

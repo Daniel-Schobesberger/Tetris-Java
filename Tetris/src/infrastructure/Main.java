@@ -1,3 +1,6 @@
+/**
+ * @author Nico Siegl
+ */
 package infrastructure;
 
 import game.Block;

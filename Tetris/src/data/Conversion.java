@@ -1,3 +1,6 @@
+/**
+ * @author Nico Siegl
+ */
 package data;
 
 public class Conversion {

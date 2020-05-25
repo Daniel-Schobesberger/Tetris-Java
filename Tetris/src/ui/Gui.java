@@ -21,7 +21,7 @@ public class Gui {
         jf.setLocationRelativeTo(null);
         jf.setResizable(false);
         jf.setLayout(null);
-        jf.addKeyListener(new KeyHandler());
+        jf.addKeyListener((new KeyHandler()));
         jf.requestFocus();
         
         DrawGame dg = new DrawGame();
