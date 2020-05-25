@@ -13,7 +13,7 @@ public class GameLoop extends Thread {
     public void run() {
         while (running) {
             try {       
-                if (Game.gameState == GameState.start) {
+                if (Game.gameState == GameState.ingame) {
                     
                     Game.currentBlock.setY(Game.currentBlock.getY()+1);
                     if (Game.spawnNewBlock) {

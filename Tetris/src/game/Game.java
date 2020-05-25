@@ -10,6 +10,7 @@ public class Game {
     public static Block nextBlock;
     public static int[][] map = new int [10][18];
     public static GameState gameState = GameState.start;
+    public static GameState gamestate;
 
     //Funktion zum reset des Spiels
     public static void clear(){

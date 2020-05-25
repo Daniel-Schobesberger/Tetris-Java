@@ -9,6 +9,7 @@ public class Main {
         Game.currentBlock = new Block();
         Game.blocks.add(Game.currentBlock);
         Game.nextBlock = new Block();
+        
         Gui game = new Gui();
         game.create();
         
