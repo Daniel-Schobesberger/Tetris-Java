@@ -1,3 +1,7 @@
+/**
+ *
+ * @author Mia Mandel
+ */
 package game;
 
 import java.awt.Color;
@@ -5,7 +9,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Block{
+import data.Collision;
+
+public class Block {
 
     BlockType type;
     int x, y, size, rotation = 0;
@@ -13,9 +19,12 @@ public class Block{
     Color color;
     boolean movable = true;
 
-    public Block(){
-        type = BlockType.random();
-        switch(type){
+    public Block() {
+
+        //type = BlockType.random();
+        type = BlockType.O;
+
+        switch (type) {
             case I:
                 size = 4;
                 break;
@@ -24,7 +33,7 @@ public class Block{
                 break;
             default:
                 size = 3;
-                break;
+
         }
 
         switch (type) {
@@ -48,36 +57,50 @@ public class Block{
                 break;
             case S:
                 color = Color.GREEN;
-                break;
-
         }
 
         x = 4;
         y = -2;
 
-       try{
-           bounds = blockBuilder(type);
-       } catch (FileNotFoundException e){
+        try {
+            bounds = blockBuilder(type);
 
-           e.printStackTrace();
-       }
+            /*
+             * for (int i = 0; i < bounds.length; i++) { for (int j = 0; j <
+             * bounds[i].length; j++) { for (int k = 0; k < bounds[i][j].length; k++) {
+             * System.out.print(bounds[i][j][k]);
+             *
+             * } System.out.println(""); } System.out.println("----"); }
+             */
+
+        } catch (FileNotFoundException e) {
+
+            e.printStackTrace();
+        }
 
     }
 
-    public void rotate(){
-        rotation ++;
+    public void rotate() {
+
+        rotation++;
+
         if (rotation == 4) {
             rotation = 0;
         }
+
     }
 
-    public int[][][] blockBuilder(BlockType type) throws FileNotFoundException{
+    public int[][][] blockBuilder(BlockType type) throws FileNotFoundException {
+
         int[][][] bounds;
-        switch(type) {
-            case I: bounds = new int[4][4][4];
-            break;
-            case O: bounds = new int[4][2][2];
-            break;
+
+        switch (type) {
+            case I:
+                bounds = new int[4][4][4];
+                break;
+            case O:
+                bounds = new int[4][2][2];
+                break;
             default:
                 bounds = new int[4][3][3];
         }
@@ -87,7 +110,8 @@ public class Block{
 
         for (int variant = 0; variant < 4; variant++) {
             for (int i = 0; i < bounds[0].length; i++) {
-                if(sc.hasNext()){
+
+                if (sc.hasNext()) {
                     String[] srow = sc.next().split("");
                     int[] row = new int[bounds[0].length];
 
@@ -103,19 +127,33 @@ public class Block{
         return bounds;
 
     }
-    
+
     public int getTypeValue() {
-        switch(type) {
-            case I: return 1;
-            case O: return 2;
-            case T: return 3;
-            case L: return 4;
-            case J: return 5;
-            case Z: return 6;
-            case S: return 7;
+        switch (type) {
+            case I:
+                return 1;
+
+            case O:
+                return 2;
+
+            case T:
+                return 3;
+
+            case L:
+                return 4;
+
+            case J:
+                return 5;
+
+            case Z:
+                return 6;
+
+            case S:
+                return 7;
         }
-        
+
         return 0;
+
     }
 
     public BlockType getType() {
@@ -181,4 +219,6 @@ public class Block{
     public void setMovable(boolean movable) {
         this.movable = movable;
     }
+
+
 }

@@ -1,3 +1,7 @@
+/**
+ *
+ * @author Mia Mandel
+ */
 package game;
 
 //Enum enthält alle Blockvariationen

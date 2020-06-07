@@ -26,7 +26,11 @@ public class GameLoop extends Thread {
 
                     }
 
+                    /**
+                     * @author Mia Mandel
+                     */
                     if (Game.spawnNewBlock) {
+                        Collision.checkFullRow(1);
                         Game.blocks.add(Game.nextBlock);
                         Game.currentBlock = Game.nextBlock;
                         Game.nextBlock = new Block();

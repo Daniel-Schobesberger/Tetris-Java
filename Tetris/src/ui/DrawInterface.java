@@ -35,6 +35,16 @@ public class DrawInterface extends JLabel {
         g.setColor(Color.BLACK);
         g.drawRect(32, 0, 128, 128);
 
+        /**
+         * @author Mia Mandel
+         */
+
+
+        g.setFont(Gui.pixelfont);
+        g.drawString("SCORE: " + Game.score, 32, 200);
+
+        g.drawString("BEST: " + Game.highscore, 32, 250);
+
         repaint();
     }
 }

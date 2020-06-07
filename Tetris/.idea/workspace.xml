@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e40e4204-0cde-40f9-ac01-543c10050e90" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Tetris" />
+  </component>
+  <component name="ProjectId" id="1d0905oJJleBZQOhoKDxilR5fxS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/rsc/fonts" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rsc/fonts" />
+      <recent name="$PROJECT_DIR$/src/io" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/io" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e40e4204-0cde-40f9-ac01-543c10050e90" name="Default Changelist" comment="" />
+      <created>1591550917073</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591550917073</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="181" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591550963115">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="181" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.773@0.23.1280.773" timestamp="1591550963115" />
+    <state x="395" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1591550937635">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="395" y="199" key="com.intellij.ide.util.TipDialog/0.23.1280.773@0.23.1280.773" timestamp="1591550937635" />
+    <state x="-16" y="120" width="670" height="676" key="search.everywhere.popup" timestamp="1591551757756">
+      <screen x="0" y="0" width="1280" height="796" />
+    </state>
+    <state x="-16" y="120" width="670" height="676" key="search.everywhere.popup/0.0.1280.796@0.0.1280.796" timestamp="1591551757756" />
+  </component>
+</project>
