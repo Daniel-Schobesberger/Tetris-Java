@@ -28,7 +28,7 @@ Für die Umsetzung planen wir ungefähr 4 Wochen ein, wobei jeder von uns ungef�
 
 ---
 
-## Klassendiagramm
+## Klassendiagramm (UML)
 Zur Umsetzung benötigen wir auch jede Menge Klassen, Methoden und Variablen. Diese sind im unten dargestellten Klassendiagramm aufgezählt.
 
 ![img](/CLASS-DIAGRAM.jpg)
