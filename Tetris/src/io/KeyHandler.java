@@ -115,7 +115,6 @@ public class KeyHandler implements KeyListener{
                 Game.clear();
             }
         }
-        
     }
 
     @Override

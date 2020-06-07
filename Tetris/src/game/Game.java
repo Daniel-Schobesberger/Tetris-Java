@@ -13,7 +13,7 @@ public class Game {
     public static GameState gamestate;
 
     //Funktion zum reset des Spiels
-    public static void clear(){
+    public static void clear() {
         for (int i = 0; i < map.length; i++) {
             //Setzt jede stelle der Map auf 0 => somit map leer
             for (int j = 0; j < map[i].length; j++) {

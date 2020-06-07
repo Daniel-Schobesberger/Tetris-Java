@@ -19,7 +19,7 @@ public class Main {
         start();
     }
     
-    //Startet das Spiel
+    // Startet das Spiel
     public static void start(){
         GameLoop loop = new GameLoop();
         loop.start();

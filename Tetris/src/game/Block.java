@@ -27,7 +27,7 @@ public class Block{
                 break;
         }
 
-        switch (type){
+        switch (type) {
             case I:
                 color = Color.CYAN;
                 break;

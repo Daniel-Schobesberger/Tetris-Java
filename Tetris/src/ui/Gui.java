@@ -1,6 +1,5 @@
 package ui;
 
-import processing.core.*;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
