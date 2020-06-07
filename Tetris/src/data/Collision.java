@@ -194,4 +194,64 @@ public class Collision {
 
         }
     }
+
+    /**
+     * @author Mia Mandel
+     */
+
+    public static void checkFullRow(int multiplier) {
+
+        int blocksInRow = 0;
+
+        for (int y = Game.map[0].length - 1; y > 0; y--) {
+            for (int x = 0; x < Game.map.length; x++) {
+
+                if (Game.map[x][y] > 0) {
+                    blocksInRow++;
+                }
+            }
+            if (blocksInRow == 10) {
+                Game.scoreToAdd += (10 * multiplier);
+                delRow(y, multiplier);
+                break;
+            } else {
+                blocksInRow = 0;
+            }
+
+        }
+
+        Game.score += Game.scoreToAdd;
+        Game.scoreToAdd = 0;
+
+        if (Game.score > Game.highscore) {
+            Game.highscore = Game.score;
+            DataHandler.save();
+        }
+    }
+
+    private static void delRow(int row, int multiplier) {
+
+        for (int i = 0; i < Game.map.length; i++) {
+            Game.map[i][row] = 0;
+        }
+
+        for (int y = row; y > 1; y--) {
+            for (int x = 0; x < Game.map.length; x++) {
+                Game.map[x][y] = Game.map[x][y - 1];
+            }
+
+        }
+        checkFullRow(multiplier + 1);
+    }
+
+    private static void checkLoose() {
+        for (int x = 0; x < Game.map.length; x++) {
+
+            if (Game.map[x][0] > 0) {
+                Game.gamestate = GameState.gameover;
+            }
+
+        }
+    }
+
 }

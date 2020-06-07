@@ -12,6 +12,11 @@ public class Gui {
 
     public static int width = 320, height = 576;
 
+    /**
+     * @author Mia Mandel
+     */
+    public static Font pixelfont;
+
     JFrame jf;
     
     public void create() {
@@ -23,7 +28,16 @@ public class Gui {
         jf.setLayout(null);
         jf.addKeyListener((new KeyHandler()));
         jf.requestFocus();
-        
+
+        /**
+         * @author Mia Mandel
+         */
+        pixelfont = Font.createFont(Font.TRUETYPE_FONT, new File("rsc/fonts/FFFFORWA.TTF")).deriveFont(12f);
+
+        DrawMenu dm = new DrawMenu();
+        setupDraw(dm, 0, 0, width +200, height);
+
+
         DrawGame dg = new DrawGame();
         setupDraw(dg, 0, 0, width+1, height+1);
         

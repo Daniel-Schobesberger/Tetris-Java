@@ -1,3 +1,6 @@
+/**
+ * @author Nico Siegl
+ */
 package game;
 
 import java.util.ArrayList;
