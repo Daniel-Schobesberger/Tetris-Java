@@ -44,7 +44,7 @@ Zur Umsetzung benötigen wir auch jede Menge Klassen, Methoden und Variablen. Di
 | 29.04.2020     | 15:00 - 17:00    | Interface, Variablen, Start                       | Schobesberger                            |
 | 12.05.2020     | 16:00 - 19:00    | Logik des Spiels                                  | Mandel                                   |
 | 13.05.2020     | 16:00 - 19:30    | Blöcke zum Spiel hinzugefügt                      | Siegl                                    |
-| 25.05.2020     | 16:00 - 19:00    | An collision gearbeitet                           | Doppler                                  |
+| 25.05.2020     | 16:00 - 19:00    | An Collision gearbeitet                           | Doppler                                  |
 | 25.05.2020     | 19:00 - 20:15    | Ein paar Bugs gefixt                              | Siegl                                    |
 | 26.05.2020     | 13:00 - 15:00    | Wall-collision                                    | Siegl                                    |
 | 08.06.2020     | 18:00 - 20:00    | Interface & Menu                                  | Mandel                                   |
