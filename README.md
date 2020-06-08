@@ -37,7 +37,7 @@ Zur Umsetzung benötigen wir auch jede Menge Klassen, Methoden und Variablen. Di
 
 ## Time-Management
 
-| Datum          | Uhrzeit          | Arbeit                                            | Name                                     |
+| Datum          | Uhrzeit          | Task                                              | Name                                     |
 | -------------- |:-------------:   |:-------------------------------------------------:|:----------------------------------------:|
 | 28.04.2020     | 15:30 - 17:15    | Planung, Ideen & Konzepte & Script                | Doppler, Mandel, Schobesberger, Siegl    |
 | 29.04.2020     | 14:00 - 16:00    | Skizze                                            | Doppler                                  |
@@ -46,7 +46,7 @@ Zur Umsetzung benötigen wir auch jede Menge Klassen, Methoden und Variablen. Di
 | 13.05.2020     | 16:00 - 19:30    | Blöcke zum Spiel hinzugefügt                      | Siegl                                    |
 | 25.05.2020     | 16:00 - 19:00    | An Collision gearbeitet                           | Doppler                                  |
 | 25.05.2020     | 19:00 - 20:15    | Ein paar Bugs gefixt                              | Siegl                                    |
-| 26.05.2020     | 13:00 - 15:00    | Wall-collision                                    | Siegl                                    |
+| 26.05.2020     | 13:00 - 15:00    | Wall-Collision                                    | Siegl                                    |
 | 08.06.2020     | 18:00 - 20:00    | Interface & Menu                                  | Mandel                                   |
-| 08.06.2020     | 19:00 - 21:00    | UML (Class Diagram                                | Doppler                                  |
+| 08.06.2020     | 19:00 - 21:00    | UML (Class Diagram)                               | Doppler                                  |
 | 08.06.2020     | 16:00 - 20:00    | Menu - Bugs gefixt                                | Doppler, Mandel, Schobesberger, Siegl    |
