@@ -1,19 +1,15 @@
 package ui;
 
+import processing.core.*;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import io.KeyHandler;
-import java.awt.Font;
-import java.awt.FontFormatException;
-import java.io.File;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import ui.DrawGame;
 import ui.DrawInterface;
 
 public class Gui {
+
     public static int width = 320, height = 576;
 
     /**
@@ -24,38 +20,32 @@ public class Gui {
     JFrame jf;
     
     public void create() {
-        try {
-            jf = new JFrame ("Tetris");
-            jf.setSize(width + 17 + 200, height + 41); //10 Felder in der Breite und 18 Felder in der Höhe ergeben diese Werte
-            jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            jf.setLocationRelativeTo(null);
-            jf.setResizable(false);
-            jf.setLayout(null);
-            jf.addKeyListener((new KeyHandler()));
-            jf.requestFocus();
-            
-            /**
-             * @author Mia Mandel
-             */
-            pixelfont = Font.createFont(Font.TRUETYPE_FONT, new File("rsc/fonts/FFFFORWA.TTF")).deriveFont(12f);
-            
-            DrawMenu dm = new DrawMenu();
-            setupDraw(dm, 0, 0, width +200, height);
-            
-            
-            DrawGame dg = new DrawGame();
-            setupDraw(dg, 0, 0, width+1, height+1);
-            
-            DrawInterface di = new DrawInterface();
-            setupDraw(di, width+1, 1, width, height);
-            
-            
-            jf.setVisible(true);
-        } catch (FontFormatException ex) {
-            Logger.getLogger(Gui.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(Gui.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        jf = new JFrame ("Tetris");
+        jf.setSize(width + 17 + 200, height + 41); //10 Felder in der Breite und 18 Felder in der Höhe ergeben diese Werte
+        jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jf.setLocationRelativeTo(null);
+        jf.setResizable(false);
+        jf.setLayout(null);
+        jf.addKeyListener((new KeyHandler()));
+        jf.requestFocus();
+
+        /**
+         * @author Mia Mandel
+         */
+        pixelfont = Font.createFont(Font.TRUETYPE_FONT, new File("rsc/fonts/FFFFORWA.TTF")).deriveFont(12f);
+
+        DrawMenu dm = new DrawMenu();
+        setupDraw(dm, 0, 0, width +200, height);
+
+
+        DrawGame dg = new DrawGame();
+        setupDraw(dg, 0, 0, width+1, height+1);
+        
+        DrawInterface di = new DrawInterface();
+        setupDraw(di, width+1, 1, width, height);
+        
+        
+        jf.setVisible(true);
         
     }
     

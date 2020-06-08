@@ -6,8 +6,6 @@ package infrastructure;
 import game.Block;
 import ui.Gui;
 import game.Game;
-import io.DataHandler;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -21,13 +19,18 @@ public class Main {
         /**
          * @author Mia Mandel
          */
-        Gui g = new Gui();
-        g.create();
+        try {
+            Gui g = new Gui();
+            g.create();
+        } catch (FontFormatException | IOException e) {
+            System.out.println("Failed to create GUI.");
+            e.printStackTrace();
+        }
         
         start();
     }
     
-    // Startet das Spiel
+    //Startet das Spiel
     public static void start(){
         GameLoop loop = new GameLoop();
         loop.start();

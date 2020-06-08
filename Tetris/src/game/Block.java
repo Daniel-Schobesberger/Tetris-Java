@@ -21,8 +21,7 @@ public class Block {
 
     public Block() {
 
-        //type = BlockType.random();
-        type = BlockType.O;
+        type = BlockType.random();
 
         switch (type) {
             case I:

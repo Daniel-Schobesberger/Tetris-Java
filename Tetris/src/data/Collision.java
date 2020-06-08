@@ -2,8 +2,6 @@ package data;
 
 import game.Block;
 import game.Game;
-import game.GameState;
-import io.DataHandler;
 
 public class Collision {
 
@@ -194,7 +192,11 @@ public class Collision {
             }
         } catch (Exception e) {
 
+            e.printStackTrace();
+
         }
+
+        checkLoose();
     }
 
     /**
@@ -225,8 +227,8 @@ public class Collision {
         Game.score += Game.scoreToAdd;
         Game.scoreToAdd = 0;
 
-        if (Game.score > Game.highScore) {
-            Game.highScore = Game.score;
+        if (Game.score > Game.highscore) {
+            Game.highscore = Game.score;
             DataHandler.save();
         }
     }
@@ -247,9 +249,9 @@ public class Collision {
     }
 
     private static void checkLoose() {
-        for (int x = 0; x < Game.map.length; x++) {
+        for (int i = 0; x < Game.map.length; i++) {
 
-            if (Game.map[x][0] > 0) {
+            if (Game.map[i][0] > 0) {
                 Game.gamestate = GameState.gameover;
             }
 

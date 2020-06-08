@@ -38,10 +38,11 @@ public class DrawInterface extends JLabel {
         /**
          * @author Mia Mandel
          */
+
+
         g.setFont(Gui.pixelfont);
         g.drawString("SCORE: " + Game.score, 32, 200);
-
-        g.drawString("BEST: " + Game.highScore, 32, 250);
+        g.drawString("HIGHSCORE: " + Game.highscore, 32, 250);
 
         repaint();
     }
