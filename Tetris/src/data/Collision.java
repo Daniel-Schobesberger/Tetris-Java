@@ -2,6 +2,8 @@ package data;
 
 import game.Block;
 import game.Game;
+import game.GameState;
+import io.DataHandler;
 
 public class Collision {
 
@@ -223,8 +225,8 @@ public class Collision {
         Game.score += Game.scoreToAdd;
         Game.scoreToAdd = 0;
 
-        if (Game.score > Game.highscore) {
-            Game.highscore = Game.score;
+        if (Game.score > Game.highScore) {
+            Game.highScore = Game.score;
             DataHandler.save();
         }
     }

@@ -6,6 +6,8 @@ package infrastructure;
 import game.Block;
 import ui.Gui;
 import game.Game;
+import io.DataHandler;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -19,13 +21,8 @@ public class Main {
         /**
          * @author Mia Mandel
          */
-        try {
-            Gui g = new Gui();
-            g.create();
-        } catch (FontFormatException | IOException e) {
-            System.out.println("Failed to create GUI.");
-            e.printStackTrace();
-        }
+        Gui g = new Gui();
+        g.create();
         
         start();
     }

@@ -82,10 +82,7 @@ public class KeyHandler implements KeyListener{
             }
 
         }
-<<<<<<< HEAD
-=======
 
->>>>>>> 188f68671eae8da2b259d9bd4872f73c0b31d456
     }
 
     @Override
