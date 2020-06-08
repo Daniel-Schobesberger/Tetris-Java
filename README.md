@@ -50,3 +50,4 @@ Zur Umsetzung benötigen wir auch jede Menge Klassen, Methoden und Variablen. Di
 | 08.06.2020     | 18:00 - 20:00    | Interface & Menu                                  | Mandel                                   |
 | 08.06.2020     | 19:00 - 21:00    | UML (Class Diagram)                               | Doppler                                  |
 | 08.06.2020     | 16:00 - 20:00    | Menu - Bugs gefixt                                | Doppler, Mandel, Schobesberger, Siegl    |
+| 08.06.2020     | 20:00 - 21:15    | Bugs gefixt                                       | Mandel, Siegl                            |
