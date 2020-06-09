@@ -2,6 +2,8 @@ package data;
 
 import game.Block;
 import game.Game;
+import io.DataHandler;
+import game.GameState;
 
 public class Collision {
 
@@ -227,8 +229,8 @@ public class Collision {
         Game.score += Game.scoreToAdd;
         Game.scoreToAdd = 0;
 
-        if (Game.score > Game.highscore) {
-            Game.highscore = Game.score;
+        if (Game.score > Game.highScore) {
+            Game.highScore = Game.score;
             DataHandler.save();
         }
     }
@@ -249,7 +251,7 @@ public class Collision {
     }
 
     private static void checkLoose() {
-        for (int i = 0; x < Game.map.length; i++) {
+        for (int i = 0; i < Game.map.length; i++) {
 
             if (Game.map[i][0] > 0) {
                 Game.gamestate = GameState.gameover;

@@ -21,7 +21,7 @@ public class DataHandler {
 		
 		try {
 			Scanner sc = new Scanner(file);
-			Game.highscore = sc.nextInt();
+			Game.highScore = sc.nextInt();
 			sc.close();
 			
 		} catch (FileNotFoundException e) {
@@ -36,7 +36,7 @@ public class DataHandler {
 		try {
 			OutputStream stream = new FileOutputStream(file);
 			try {
-				stream.write(Integer.toString(Game.highscore).getBytes());
+				stream.write(Integer.toString(Game.highScore).getBytes());
 				stream.close();
 				
 			} catch (IOException e) {
