@@ -5,6 +5,10 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import game.Game;
 
+/**
+ * 
+ * @author Florian Doppler
+ */
 public class KeyHandler implements KeyListener{
 
     @Override
@@ -117,6 +121,8 @@ public class KeyHandler implements KeyListener{
     public void keyReleased(KeyEvent e) {
         if(Game.gamestate == Game.gamestate.ingame){
             if(e.getKeyCode() == KeyEvent.VK_DOWN){
+                Game.speedup = false;
+            }else if(e.getKeyCode() == KeyEvent.VK_S){
                 Game.speedup = false;
             }
         }

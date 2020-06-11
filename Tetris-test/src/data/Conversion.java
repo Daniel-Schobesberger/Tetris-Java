@@ -1,5 +1,9 @@
 package data;
 
+/**
+ * 
+ * @author Nico Siegl
+ */
 public class Conversion {
 	
 	public static int cellToCoord(int cell) {	

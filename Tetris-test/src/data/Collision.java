@@ -7,16 +7,23 @@ import io.DataHandler;
 
 public class Collision {
 
+    /**
+     * 
+     * @author Florian Doppler
+     */
     public static boolean collideWithBlock(Block b, int direction) {
         // direction: -1 = links, 0 = runter, 1 = rechts
 
         switch (direction) {
             case -1:
+                //Wir kontrollieren ob er kollidieren kann mit Block
                 if (b.getY() > 0) {
                     if (b.getX() > 0) {
                         for (int i = 0; i < b.getBounds()[b.getRotation()].length; i++) {
                             for (int j = 0; j < b.getBounds()[b.getRotation()][i].length; j++) {
+                                //Wenn Block da ist wird kollidiert
                                 if (b.getBounds()[b.getRotation()][i][j] == 1) {
+                                    //Kontrolliert ob Block da ist
                                     if (Game.map[b.getX() + i - 1][b.getY() + j] >= 1) {
 
                                         return true;
@@ -76,12 +83,17 @@ public class Collision {
         return false;
     }
 
+    /**
+     * 
+     * @author Florian Doppler
+     */
     public static boolean collideInRotation(Block b) {
         int rot = b.getRotation() + 1;
         if (rot == 4) {
             rot = 0;
         }
-
+        //erstellen eines neuen Blocks
+        //Block bekommt die gleichen werte nur andere Rotation
         Block block = new Block();
         block.setRotation(rot);
         block.setBounds(b.getBounds());
@@ -118,12 +130,18 @@ public class Collision {
         return false;
     }
 
+    /**
+     * 
+     * @author Nico Siegl
+     * @author Florian Doppler
+     */
     public static boolean collideWithWall(Block b, int direction) {
         // direction: -1 = links, 0 = runter, 1 = rechts
         switch (direction) {
             case -1:
                 for (int i = 0; i < b.getBounds()[b.getRotation()].length; i++) {
                     for (int j = 0; j < b.getBounds()[b.getRotation()][i].length; j++) {
+                        //wenn die Bedingung stimmt sind wir am linken Rand
                         if (b.getBounds()[b.getRotation()][i][j] == 1) {
                             if (b.getX() + i == 0) {
                                 return true;
@@ -135,7 +153,9 @@ public class Collision {
             case 0:
                 for (int i = 0; i < b.getBounds()[b.getRotation()].length; i++) {
                     for (int j = 0; j < b.getBounds()[b.getRotation()][i].length; j++) {
+                        
                         if (b.getBounds()[b.getRotation()][i][j] == 1) {
+                            //wenn die Bedingung stimmt sind wir ganz unten
                             if (b.getY() + j == 17) {
                                 Game.spawnNewBlock = true;
                                 fillBlock(b);
@@ -150,6 +170,7 @@ public class Collision {
                 for (int i = 0; i < b.getBounds()[b.getRotation()].length; i++) {
                     for (int j = 0; j < b.getBounds()[b.getRotation()][i].length; j++) {
                         if (b.getBounds()[b.getRotation()][i][j] == 1) {
+                            //wenn die Bedingung stimmt sind wir am rechten Rand
                             if (b.getX() + (i + 2) >= 11) {
                                 return true;
                             }
@@ -162,6 +183,10 @@ public class Collision {
         return false;
     }
 
+    /**
+     * 
+     * @author Daniel Schobesberger 
+     */
     private static void fillBlock(Block b) {
         try {
             for (int i = 0; i < b.getBounds()[b.getRotation()].length; i++) {
@@ -179,6 +204,10 @@ public class Collision {
         checkLoose();
     }
 
+    /**
+     * 
+     * @author Mia Mandel 
+     */
     public static void checkFullRow(int multiplier) {
 
         int blocksInRow = 0;
@@ -209,6 +238,10 @@ public class Collision {
         }
     }
 
+    /**
+     * 
+     * @author Mia Mandel 
+     */
     private static void delRow(int row, int multiplier) {
 
         for (int i = 0; i < Game.map.length; i++) {
@@ -224,6 +257,10 @@ public class Collision {
         checkFullRow(multiplier + 1);
     }
 
+    /**
+     * 
+     * @author Mia Mandel 
+     */
     private static void checkLoose() {
         for (int x = 0; x < Game.map.length; x++) {
 

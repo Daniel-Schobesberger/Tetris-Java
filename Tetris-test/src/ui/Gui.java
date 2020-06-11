@@ -10,6 +10,10 @@ import javax.swing.JLabel;
 
 import io.KeyHandler;
 
+/**
+ * 
+ * @author Daniel Schobesberger
+ */
 public class Gui {
 
 	public static int width = 320, height = 576;

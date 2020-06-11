@@ -6,6 +6,10 @@ import game.Game;
 import game.GameState;
 import static java.lang.Thread.sleep;
 
+/**
+ * 
+ * @author Nico Siegl
+ */
 public class GameLoop extends Thread {
 
     private boolean running = true;
@@ -22,9 +26,10 @@ public class GameLoop extends Thread {
                         Collision.collideWithWall(Game.currentBlock, 0);
 
                     }
-
+                    
+                    //Spawnt neuen Block
                     if (Game.spawnNewBlock) {
-                        Collision.checkFullRow(1);
+                        Collision.checkFullRow(1); 
                         Game.blocks.add(Game.nextBlock);
                         Game.currentBlock = Game.nextBlock;
                         Game.nextBlock = new Block();

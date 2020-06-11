@@ -3,7 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/nicosiegl/Desktop/Tetris-test/src/infrastructure/TetrisTest.java</file>
+            <file>file:/Users/nicosiegl/Desktop/Tetris-Java/Tetris-test/src/game/BlockType.java</file>
+            <file>file:/Users/nicosiegl/Desktop/Tetris-Java/Tetris-test/src/ui/DrawMenu.java</file>
+            <file>file:/Users/nicosiegl/Desktop/Tetris-Java/Tetris-test/src/game/Block.java</file>
+            <file>file:/Users/nicosiegl/Desktop/Tetris-Java/Tetris-test/src/data/Conversion.java</file>
+            <file>file:/Users/nicosiegl/Desktop/Tetris-Java/Tetris-test/src/ui/Gui.java</file>
+            <file>file:/Users/nicosiegl/Desktop/Tetris-Java/Tetris-test/src/io/DataHandler.java</file>
+            <file>file:/Users/nicosiegl/Desktop/Tetris-Java/Tetris-test/src/infrastructure/GameLoop.java</file>
+            <file>file:/Users/nicosiegl/Desktop/Tetris-Java/Tetris-test/src/ui/DrawGame.java</file>
+            <file>file:/Users/nicosiegl/Desktop/Tetris-Java/Tetris-test/src/io/KeyHandler.java</file>
+            <file>file:/Users/nicosiegl/Desktop/Tetris-Java/Tetris-test/src/data/Collision.java</file>
+            <file>file:/Users/nicosiegl/Desktop/Tetris-Java/Tetris-test/src/ui/DrawInterface.java</file>
+            <file>file:/Users/nicosiegl/Desktop/Tetris-Java/Tetris-test/src/infrastructure/TetrisTest.java</file>
+            <file>file:/Users/nicosiegl/Desktop/Tetris-Java/Tetris-test/src/game/Game.java</file>
+            <file>file:/Users/nicosiegl/Desktop/Tetris-Java/Tetris-test/src/game/GameState.java</file>
         </group>
     </open-files>
 </project-private>

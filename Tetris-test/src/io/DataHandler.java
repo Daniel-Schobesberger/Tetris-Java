@@ -9,6 +9,10 @@ import java.util.Scanner;
 
 import game.Game;
 
+/**
+ * 
+ * @author Mia Mandel
+ */
 public class DataHandler {
 
     public static void load() {

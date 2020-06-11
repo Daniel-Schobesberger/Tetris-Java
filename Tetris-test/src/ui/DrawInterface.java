@@ -8,6 +8,10 @@ import javax.swing.JLabel;
 import data.Conversion;
 import game.Game;
 
+/**
+ * 
+ * @author Daniel Schobesberger
+ */
 public class DrawInterface extends JLabel {
 
     @Override
@@ -37,22 +41,28 @@ public class DrawInterface extends JLabel {
         }
 
         g.setColor(Color.BLACK);
+
         g.setFont(Gui.pixelfont.deriveFont(16f));
         g.drawString("NEXT BLOCK ", 32, 25);
 
         //Zeichnet rechts den kommenden Block
         //Breite von Feld
         g.setColor(Color.LIGHT_GRAY);
+
         for (int i = 0; i < 4; i++) {
             //Höhe von Feld
             for (int j = 1; j < 5; j++) {
+                //Rechteck zeichnen 32*32
                 g.drawRect(i * 32 + 32, j * 32, 32, 32);
             }
         }
-
+        
+        //Außenlinie von kommenden Block
         g.setColor(Color.BLACK);
+
         g.drawRect(32, 32, 128, 128);
 
+        
         g.setFont(Gui.pixelfont);
         if(Game.score>=Game.highscore){
             g.setColor(Color.RED);
@@ -64,6 +74,7 @@ public class DrawInterface extends JLabel {
         g.setColor(Color.RED);
         g.drawString("BEST: " + Game.highscore, 32, 250);
         }
+        
         repaint();
     }
 

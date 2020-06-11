@@ -7,6 +7,10 @@ import java.util.Scanner;
 
 import data.Collision;
 
+/**
+ *
+ * @author Mia Mandel
+ */
 public class Block {
 
     BlockType type;
@@ -17,8 +21,7 @@ public class Block {
 
     public Block() {
 
-        type = BlockType.random();
-        //type = BlockType.I;
+        type = BlockType.random();//holt sich random Block von enum
 
         switch (type) {
             case I:
@@ -55,19 +58,11 @@ public class Block {
                 color = Color.GREEN;
         }
 
-        x = 4;
-        y = -2;
+        x = 4;      //X-Koordinate von wo Block kommt
+        y = -2;     //Y-Koordinate von wo Block kommt. Negative Zahl weil Block von über dem Spielfeld hereinkommt
 
         try {
             bounds = blockBuilder(type);
-
-            /*
-			 * for (int i = 0; i < bounds.length; i++) { for (int j = 0; j <
-			 * bounds[i].length; j++) { for (int k = 0; k < bounds[i][j].length; k++) {
-			 * System.out.print(bounds[i][j][k]);
-			 * 
-			 * } System.out.println(""); } System.out.println("----"); }
-             */
         } catch (FileNotFoundException e) {
 
             e.printStackTrace();
@@ -75,7 +70,7 @@ public class Block {
 
     }
 
-   public void rotate() {
+    public void rotate() {
         setRotation(getRotation() + 1);
         if (getRotation() == 4) {
             setRotation(0);
@@ -97,12 +92,11 @@ public class Block {
                 bounds = new int[4][3][3];
         }
 
-        File file = new File("rsc/blocks/" + type + ".txt");
+        File file = new File("rsc/blocks/" + type + ".txt");    //lest Block ein
         Scanner sc = new Scanner(file);
 
         for (int variant = 0; variant < 4; variant++) {
             for (int i = 0; i < bounds[0].length; i++) {
-
                 if (sc.hasNext()) {
                     String[] srow = sc.next().split("");
                     int[] row = new int[bounds[0].length];
@@ -110,7 +104,6 @@ public class Block {
                     for (int j = 0; j < row.length; j++) {
                         row[j] = Integer.valueOf(srow[j]);
                         bounds[variant][j][i] = row[j];
-
                     }
                 }
             }
@@ -120,8 +113,6 @@ public class Block {
 
     }
 
-   
-    
     public int getTypeValue() {
         switch (type) {
             case I:
@@ -213,7 +204,5 @@ public class Block {
     public void setMovable(boolean movable) {
         this.movable = movable;
     }
-
-    
 
 }
