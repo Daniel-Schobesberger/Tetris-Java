@@ -10,7 +10,7 @@ import game.GameState;
 
 /**
  * 
- * @author Mia Mandel
+ * @author Florian Doppler
  */
 public class DrawMenu extends JLabel {
 	@Override

@@ -132,7 +132,6 @@ public class Collision {
 
     /**
      * 
-     * @author Nico Siegl
      * @author Florian Doppler
      */
     public static boolean collideWithWall(Block b, int direction) {

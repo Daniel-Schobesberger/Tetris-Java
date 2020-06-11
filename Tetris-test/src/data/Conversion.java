@@ -2,7 +2,7 @@ package data;
 
 /**
  * 
- * @author Nico Siegl
+ * @author Florian Doppler
  */
 public class Conversion {
 	
