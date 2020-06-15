@@ -61,6 +61,6 @@ Diese Bugs hatten wir bei der Entwicklung:
 | 08.06.2020     | 18:00 - 20:00    | Interface & Menu                                  | Mandel                                   |
 | 08.06.2020     | 19:00 - 21:00    | UML (Class Diagram)                               | Doppler                                  |
 | 08.06.2020     | 16:00 - 20:00    | Menu - Bugs gefixt                                | Mandel, Schobesberger, Siegl             |
-| 08.06.2020     | 20:00 - 21:15    | Bugs gefixt                                       | Schobesberger, Siegl                     |
+| 08.06.2020     | 20:00 - 21:15    | Bugs gefixt                                       | Mandel, Schobesberger, Siegl             |
 | 15.06.2020     | 16:00 - 17:30    | Ausarbeitung der Bugs                             | Doppler, Schobesberger                   |
 | 15.06.2020     | 18:00 - 21:00    | Präsentation                                      | Doppler                                  |
