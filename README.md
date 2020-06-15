@@ -39,7 +39,7 @@ Zur Umsetzung benötigen wir auch jede Menge Klassen, Methoden und Variablen. Di
 Diese Bugs hatten wir unter der Entwicklung:
 
 * import-Errors
-* interface-Error beim Start des Spiels
+* Interface-Error beim Start des Spiels
 * Key-Handler
 * Rotieren der Blöcke
 * Highscore (Zähler)
