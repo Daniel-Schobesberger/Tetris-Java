@@ -36,7 +36,7 @@ Zur Umsetzung benötigen wir auch jede Menge Klassen, Methoden und Variablen. Di
 ---
 
 ## Bugs
-Diese Bugs hatten wir unter der Entwicklung:
+Diese Bugs hatten wir bei der Entwicklung:
 
 * import-Errors
 * Interface-Error beim Start des Spiels
