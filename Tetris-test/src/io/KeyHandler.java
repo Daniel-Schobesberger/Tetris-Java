@@ -13,7 +13,7 @@ public class KeyHandler implements KeyListener{
 
     @Override
     public void keyTyped(KeyEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
@@ -33,6 +33,7 @@ public class KeyHandler implements KeyListener{
                     }
                 }catch(Exception ex){
                     ex.printStackTrace();
+                    System.out.println("Hallo");
                 }
             }
             if(e.getKeyCode() == KeyEvent.VK_R){
