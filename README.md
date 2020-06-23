@@ -35,6 +35,17 @@ Zur Umsetzung benötigen wir auch jede Menge Klassen, Methoden und Variablen. Di
 
 ---
 
+## Bugs
+Diese Bugs hatten wir bei der Entwicklung:
+
+* import-Errors
+* Interface-Error beim Start des Spiels
+* Key-Handler
+* Rotieren der Blöcke
+* Highscore (Zähler)
+
+---
+
 ## Time-Management
 
 | Datum          | Uhrzeit          | Task                                              | Name                                     |
@@ -49,5 +60,8 @@ Zur Umsetzung benötigen wir auch jede Menge Klassen, Methoden und Variablen. Di
 | 26.05.2020     | 13:00 - 15:00    | Wall-Collision                                    | Siegl                                    |
 | 08.06.2020     | 18:00 - 20:00    | Interface & Menu                                  | Mandel                                   |
 | 08.06.2020     | 19:00 - 21:00    | UML (Class Diagram)                               | Doppler                                  |
-| 08.06.2020     | 16:00 - 20:00    | Menu - Bugs gefixt                                | Doppler, Mandel, Schobesberger, Siegl    |
-| 08.06.2020     | 20:00 - 21:15    | Bugs gefixt                                       | Mandel, Siegl                            |
+| 08.06.2020     | 16:00 - 20:00    | Menu - Bugs gefixt                                | Mandel, Schobesberger, Siegl             |
+| 08.06.2020     | 20:00 - 21:15    | Bugs gefixt                                       | Mandel, Schobesberger, Siegl             |
+| 15.06.2020     | 12:00 - 13:00    | JavaDoc                                           | Schobesberger                            |
+| 15.06.2020     | 16:00 - 17:30    | Ausarbeitung der Bugs                             | Doppler, Schobesberger                   |
+| 15.06.2020     | 18:00 - 21:00    | Präsentation                                      | Doppler                                  |
